@@ -1,0 +1,366 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+/* TELAS PEQUENAS */
+
+
+
+:root {
+
+  --header-content-size: 3em;
+
+
+
+
+  --hover-color-01: #ffffff08;
+  --hover-color-02: #ffffff28;
+  --default-color-grey-01: #606060;
+  --default-color-grey-02: #60606060;
+  --default-color-red-01: #f00000;
+  --default-color-red-02: #f0000080;
+
+  --color-darkest-black-01: #000000;
+  --color-darkest-black-02: #000000f0;
+  --color-darkest-black-03: #000000c0;
+  --color-dark-black-01: #050505;
+  --color-dark-black-02: #05050580;
+  --color-medium-black-01: #161616;
+  --color-medium-black-02: #16161680;
+  --color-lighter-white-01: #ffffff;
+  --color-lighter-white-02: #ffffffd0;
+  --color-light-grey-01: #b0b0b0;
+  --color-light-grey-02: #b0b0b080;
+  --color-medium-grey-01: #424242;
+  --color-medium-grey-02: #42424280;
+  --color-dark-grey-01: #2f2f2f;
+  --color-dark-grey-02: #2f2f2f80;
+
+  --study-color-01: #ff7f50;
+
+
+
+
+  --fonte-animatic: 'Amatic SC', cursive;
+  --font-apple: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-angel: "Angel", sans-serif;
+  --font-notes: 'Indie Flower', cursive;
+
+}
+
+
+* {  /* Default CSS Setings */
+  padding: 0em; margin: 0em;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+} body, html {
+  background-color: var(--color-dark-black-01);
+  width: 100vw; height: 100vh;
+  margin: auto;
+  perspective: 10px;
+  overflow-x: hidden;
+} body {
+  position: relative;
+} body * {
+  color: var(--color-lighter-white-02);
+}
+
+
+.scroll::-webkit-scrollbar {  /* Scroll Space */
+  background-color: var(--color-darkest-black-01); width: 0.5em;
+} .scroll::-webkit-scrollbar-track {  /* Fundo Scroll */
+  border-radius: 0.25em; border: 2px solid var(--color-darkest-black-01);
+  margin: 0.75em 0em;
+} .scroll::-webkit-scrollbar-track:hover {
+  background: var(--color-medium-black-01);
+} .scroll::-webkit-scrollbar-thumb {  /* Mover Scroll */
+  border: 1px solid var(--color-darkest-black-01); border-radius: 0.25em;
+  background-color: var(--color-medium-black-01);
+} .scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--color-dark-grey-01);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {  /* Header -------------------------------------------------------------------------------------------------------------------- */
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75em 1em;
+  background-color: var(--color-medium-black-02);
+} header * {
+  color: var(--study-color-01);
+  font-family: var(--font-apple);
+  font-weight: lighter;
+} header > div > div  /* Divisores */
+, header > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+} header > div > div:nth-last-of-type(1) {  /* Título & Link */
+  box-sizing: border-box;
+  padding: 0em 1em;
+  border: 2px solid var(--color-medium-black-01);
+  border-radius: 0.5em;
+} header > div > div {
+  height: var(--header-content-size);
+}
+
+
+
+
+
+
+div.icon {  /* Icons */
+  width: var(--header-content-size);
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid var(--color-medium-black-01);
+} div.icon * {
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  transition-duration: 0.15s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} div.icon:hover > a ,  /* Hover */
+div.icon:hover > div {
+  width: 90%; height: 90%;
+} div.icon:hover {
+  background: var(--hover-color-01);
+  box-shadow: 0em 0em 0.25em var(--hover-color-01);
+ }
+
+
+
+
+
+
+
+
+div#container-title h1 {  /* Study Título */
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+  transition-duration: 0.35s;
+  font-size: 1.8em;
+} div#container-title h1 > span {
+  display: none;
+  white-space: nowrap;
+  color: var(--color-light-grey-01);
+  line-height: 1em;
+  font-size: 0.5em;
+  font-weight: 400;
+} div#container-waifu:hover ~ div#container-title {  /* Hover */
+  box-shadow: inset 0em 0em 2em var(--color-medium-black-01);
+  background-color: var(--color-darkest-black-02);
+} div#container-waifu:hover ~ div#container-title * h1 {
+  color: var(--color-lighter-white-02);
+} div#container-waifu:hover ~ div#container-title * h1 > span {
+  display: block;
+}
+
+
+
+
+
+main { /* Main ------------------------------------------------------------------------------------------------------------------------- */
+  padding: 0em 1em;
+}
+
+
+
+
+
+div.guia-sound > div > div:nth-of-type(1) div.caracter > p {
+  background-color: transparent;
+  color: var(--color-lighter-white-02);
+}
+
+
+
+
+
+div.group-caracters {
+  margin: 0em;
+  background-color: var(--color-medium-grey-01);
+  display: inline-flex;
+  padding: 0.25em;
+  gap: 0.25em;
+} div.table-vowel div.caracter > p {
+  background-color: transparent;
+} div.caracter > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.75em;
+  width: 1.75em;
+  background-color: var(--study-color-01);
+  font-size: 1.15em;
+  font-weight: bolder;
+}
+
+
+
+
+
+section {
+  background-color: var(--color-darkest-black-01);
+  margin: 2.5em 0em;
+  padding: 0.75em;
+  gap: 0.75em;
+  display: inline-flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: fit-content;
+} main > section > div.table-vowel.group-caracters {
+  background-color: var(--color-medium-black-01);
+} main > section > div {
+  background-color: var(--color-medium-black-01);
+  padding: 0.25em;
+} section > div.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  width: 3em;
+  color: var(--color-lighter-white-02);
+} section > div.section > div {
+  transform: translate(-0.03em , -0.05em);
+  font-size: 2.25em;
+  line-height: 0.8em;
+}
+
+
+
+
+
+div.table-vowel div.group-col-caracters {
+  padding: 0.25em;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-medium-grey-02);
+  width: fit-content;
+  gap: 0.25em;
+  color: var(--color-lighter-white-02);
+} div.table-vowel div.group-col-caracters > div.caracter:nth-of-type(1) > p > abbr {
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} div.table-vowel div.group-col-caracters > div.caracter:nth-of-type(1) > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--study-color-01);
+}
+
+
+
+
+
+div.guia-titu {
+  flex-direction: column;
+  display: flex;
+  gap: 0.25em;
+} div.titu {
+  background-color: var(--color-medium-grey-01);
+  padding: 0.25em;
+  width: fit-content;
+} div.titu > p {
+  font-size: 1.15em;
+  color: var(--color-lighter-white-02);
+  font-weight: bold;
+}
+
+
+
+
+
+footer {  /* footer -------------------------------------------------------------------------------------------------------------------- */
+  padding: 1em;
+  min-height: 8em;
+  background-color: var(--color-medium-black-02);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {  /* sub 600px ----------------------------------------------------------------------------------- */
+
+
+  div#container-links.openBurge { /* Bar Social Links */
+    padding: 0.2em;
+    width: 8.5em;
+    position: absolute;
+    top: calc( 100% + 1em);
+    right: 0em;
+    height: fit-content;
+    border-radius: 0.75em;
+  } div#container-links {
+    background-color: var(--color-darkest-black-02);
+    flex-direction: column;
+    gap: 0.25em;
+  } div#container-links.openBurge h2 {
+    display: none;
+  } div#container-links.openBurge * {
+    font-weight: 100;
+    font-size: 1.25em;
+    padding: 0.25em;
+    text-align: center;
+    width: 100%;
+  }
+  
+  
+  
+  }
