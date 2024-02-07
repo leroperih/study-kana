@@ -207,6 +207,7 @@ div.group-caracters {
 } div.table-vowel div.caracter > p {
   background-color: transparent;
 } div.caracter > p {
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -215,6 +216,8 @@ div.group-caracters {
   background-color: var(--study-color-01);
   font-size: 1.15em;
   font-weight: bolder;
+} div.caracter.more-shift > p {
+  width: 3.5em;
 }
 
 
@@ -262,7 +265,7 @@ div.table-vowel div.group-col-caracters {
   color: var(--color-lighter-white-02);
 } div.table-vowel div.group-col-caracters > div.caracter:nth-of-type(1) > p > abbr {
   text-decoration: none;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 } div.table-vowel div.group-col-caracters > div.caracter:nth-of-type(1) > p {
   display: flex;
   align-items: center;
@@ -297,70 +300,3 @@ footer {  /* footer ------------------------------------------------------------
   min-height: 8em;
   background-color: var(--color-medium-black-02);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 600px) {  /* sub 600px ----------------------------------------------------------------------------------- */
-
-
-  div#container-links.openBurge { /* Bar Social Links */
-    padding: 0.2em;
-    width: 8.5em;
-    position: absolute;
-    top: calc( 100% + 1em);
-    right: 0em;
-    height: fit-content;
-    border-radius: 0.75em;
-  } div#container-links {
-    background-color: var(--color-darkest-black-02);
-    flex-direction: column;
-    gap: 0.25em;
-  } div#container-links.openBurge h2 {
-    display: none;
-  } div#container-links.openBurge * {
-    font-weight: 100;
-    font-size: 1.25em;
-    padding: 0.25em;
-    text-align: center;
-    width: 100%;
-  }
-  
-  
-  
-  }
